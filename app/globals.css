@@ -372,39 +372,35 @@
     border-color: rgba(249, 123, 22, 0.25);
   }
 
-  /* Hero Title with Indian Flag Colors - Smooth Gradient */
+  /* Hero Title with Indian Flag Colors - Clean & Crisp */
   .hero-title {
     font-family: "Great Vibes", cursive;
     font-size: clamp(2.5rem, 12vw, 6rem);
     font-weight: 700;
     letter-spacing: 0.05em;
     line-height: 1.2;
+    
+    /* Vibrant Indian Flag Gradient */
     background: linear-gradient(
       135deg,
       #F97B16 0%,
-      #FFB347 12%,
-      #FFC857 20%,
-      #FFFFFF 35%,
+      #FFB347 15%,
+      #FFC857 25%,
+      #FFFFFF 40%,
       #FFFFFF 50%,
-      #FFFFFF 65%,
-      #7CFC00 80%,
-      #4ecb71 88%,
-      #16A34A 100%
+      #FFFFFF 60%,
+      #22C55E 75%,
+      #16A34A 90%,
+      #10591D 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     
-    /* Subtle black blur shadow effect - Premium & Elegant */
+    /* Elegant drop shadow for crisp definition */
     filter: 
-      drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.12))
-      drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08))
-      drop-shadow(0px 12px 32px rgba(0, 0, 0, 0.06));
-    
-    /* Elegant text shadow for depth */
-    text-shadow: 
-      0px 2px 6px rgba(0, 0, 0, 0.1),
-      0px -1px 2px rgba(255, 255, 255, 0.2);
+      drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25))
+      drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.15));
     
     animation: fadeInScale 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
     transition: all 300ms ease;
@@ -415,12 +411,8 @@
   /* Hover effect for interactivity */
   .hero-title:hover {
     filter: 
-      drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16))
-      drop-shadow(0px 10px 28px rgba(0, 0, 0, 0.12))
-      drop-shadow(0px 16px 40px rgba(0, 0, 0, 0.08));
-    text-shadow: 
-      0px 3px 8px rgba(0, 0, 0, 0.12),
-      0px -1px 2px rgba(255, 255, 255, 0.25);
+      drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.3))
+      drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.2));
     transform: scale(1.02);
   }
   .hero-tagline {
