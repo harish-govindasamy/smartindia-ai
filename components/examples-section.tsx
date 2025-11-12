@@ -6,19 +6,19 @@ export default function ExamplesSection() {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-8 sm:my-12 px-4 sm:px-6">
-      <p className="text-center text-xs sm:text-sm text-muted-foreground font-body">
+    <div className="w-full max-w-4xl mx-auto my-12 px-4 sm:px-6">
+      <p className="text-center text-sm text-muted-foreground leading-relaxed">
         Example searches:{" "}
         <button
           onClick={() => handleExampleSearch("AI in agriculture in India")}
-          className="text-primary hover:text-accent font-serif font-semibold transition-colors duration-200"
+          className="example-link"
         >
           AI in agriculture in India
         </button>
         {", "}
         <button
           onClick={() => handleExampleSearch("best learning resources for ML")}
-          className="text-primary hover:text-accent font-serif font-semibold transition-colors duration-200"
+          className="example-link"
         >
           best learning resources for ML
         </button>

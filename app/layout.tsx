@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display, IBM_Plex_Mono, Allura } from "next/font/google"
+import { Playfair_Display, IBM_Plex_Mono, Allura, Great_Vibes } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -17,6 +17,11 @@ const allura = Allura({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-allura",
+})
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-great-vibes",
 })
 
 export const metadata: Metadata = {
@@ -47,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${ibmPlexMono.variable} ${allura.variable}`}>
+    <html lang="en" className={`${playfairDisplay.variable} ${ibmPlexMono.variable} ${allura.variable} ${greatVibes.variable}`}>
       <body className={`font-body antialiased`}>
         {children}
         <Analytics />
