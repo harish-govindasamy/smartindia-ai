@@ -6,8 +6,8 @@ export default function ExamplesSection() {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-12 px-4 sm:px-6">
-      <p className="text-center text-sm text-muted-foreground leading-relaxed">
+    <div className="w-full max-w-4xl mx-auto my-4 sm:my-6 px-2 sm:px-4 md:px-6">
+      <p className="text-center text-xs sm:text-sm text-muted-foreground leading-relaxed">
         Example searches:{" "}
         <button
           onClick={() => handleExampleSearch("AI in agriculture in India")}

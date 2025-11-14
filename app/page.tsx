@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import SearchSection from "@/components/search-section"
 import InfoSection from "@/components/info-section"
-import ExamplesSection from "@/components/examples-section"
 import Footer from "@/components/footer"
 
 export const metadata = {
@@ -11,11 +10,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-transparent via-transparent to-background">
+    <div className="min-h-screen flex flex-col bg-linear-to-b from-transparent via-transparent to-background">
       <Header />
-      <main className="flex-1 flex flex-col items-center justify-start px-4 py-8 sm:py-12 pt-32 sm:pt-36">
+      <main className="flex-1 flex flex-col items-center justify-start px-2 sm:px-3 md:px-4 py-4 sm:py-6 pt-24 sm:pt-28 md:pt-32">
         <SearchSection />
-        <ExamplesSection />
         <InfoSection />
       </main>
       <Footer />

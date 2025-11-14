@@ -35,13 +35,13 @@ export default function SearchSection() {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
+    <div className="w-full max-w-4xl mx-auto px-2 sm:px-4 md:px-6">
       {/* Hero Section */}
-      <div className="text-center mb-8 sm:mb-12 mt-8 sm:mt-12">
+      <div className="text-center mb-4 sm:mb-6 md:mb-8 mt-4 sm:mt-6">
         <div className="relative inline-block flex justify-center">
           {/* Ashoka Chakra Background - Thick Blue with Rotation */}
           <svg
-            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 opacity-30 pointer-events-none -z-10 animate-spin"
+            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 opacity-30 pointer-events-none -z-10 animate-spin"
             style={{ animationDuration: '20s', animationDirection: 'normal' }}
             viewBox="0 0 200 200"
             fill="none"
@@ -85,9 +85,9 @@ export default function SearchSection() {
       </div>
 
       {/* Search Bar */}
-      <form onSubmit={handleSearch} className="mb-6 sm:mb-8">
+      <form onSubmit={handleSearch} className="mb-4 sm:mb-6 md:mb-8">
         <div className="luxury-search-container">
-          <div className="flex flex-col sm:flex-row gap-3 mb-4">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-3 sm:mb-4">
             <div className="flex-1 relative min-w-0">
               <input
                 type="text"

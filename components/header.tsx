@@ -32,14 +32,14 @@ export default function Header() {
       <header className={`floating-header ${isScrolled ? "scrolled" : ""} flex items-center justify-between`}>
         {/* Logo */}
         <div className="flex items-center gap-2 sm:gap-3">
-          <Image
+          {/* <Image
             src="/smartindia-logo.svg"
             alt="SmartIndia.Ai Logo"
             width={140}
             height={40}
             priority
             className="h-8 sm:h-10 w-auto"
-          />
+          /> */}
         </div>
 
         <nav className="hidden sm:flex items-center gap-8">
