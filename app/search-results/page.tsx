@@ -50,7 +50,7 @@ export default function SearchResults() {
         <div className="w-full max-w-6xl mx-auto mb-6">
           <button
             onClick={() => router.push("/")}
-            className="flex items-center gap-2 text-sm font-medium text-primary hover:text-accent transition-colors duration-300 mb-4"
+            className="flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary hover:scale-105 transition-all duration-300 mb-4"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Search
@@ -104,7 +104,7 @@ export default function SearchResults() {
                     href={searchUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white bg-primary hover:bg-accent rounded-lg transition-all duration-300 whitespace-nowrap ml-4"
+                    className="flex items-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-[#0f0f0f] bg-primary hover:bg-secondary hover:shadow-lg rounded-lg transition-all duration-300 whitespace-nowrap ml-4"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span>Open</span>
