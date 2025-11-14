@@ -73,8 +73,8 @@ export default function SearchResults() {
                   onClick={() => handleEngineChange(e.name)}
                   className={`px-3 sm:px-4 py-2 text-xs sm:text-sm rounded-lg font-medium transition-all duration-300 ${
                     e.name === engine
-                      ? "bg-primary text-white shadow-lg"
-                      : "bg-white border border-border text-foreground hover:border-primary hover:text-primary"
+                      ? "bg-primary text-[#0f0f0f] shadow-lg"
+                      : "bg-[#1a1a1a] border border-border text-foreground hover:border-primary hover:text-primary"
                   }`}
                 >
                   {e.name}
@@ -91,7 +91,7 @@ export default function SearchResults() {
             <div className="luxury-card p-0 sm:p-0 h-[calc(100vh-300px)] sm:h-[calc(100vh-280px)] md:h-[calc(100vh-320px)] overflow-hidden rounded-2xl">
               <div className="h-full flex flex-col">
                 {/* Header with Open Link */}
-                <div className="sticky top-0 flex items-center justify-between p-4 sm:p-6 border-b border-border bg-white z-10">
+                <div className="sticky top-0 flex items-center justify-between p-4 sm:p-6 border-b border-border bg-gradient-to-r from-[#1a1a1a] to-[#252525] z-10">
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-muted-foreground font-medium">
                       Searching in {engine}
@@ -124,9 +124,9 @@ export default function SearchResults() {
             </div>
           ) : (
             // Redirect message for other engines
-            <div className="luxury-card p-6 sm:p-8 text-center">
+            <div className="luxury-card p-6 sm:p-8 text-center bg-linear-to-br from-[#1a1a1a] to-[#252525]">
               <div className="flex flex-col items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
                   <ExternalLink className="w-8 h-8 text-primary" />
                 </div>
                 <div>
