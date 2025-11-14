@@ -376,22 +376,21 @@
   .hero-title {
     font-family: "Great Vibes", cursive;
     font-size: clamp(2.5rem, 12vw, 6rem);
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.05em;
     line-height: 1.2;
     
-    /* Vibrant Indian Flag Gradient */
+    /* Vibrant Indian Flag Gradient - Orange, White, Green */
     background: linear-gradient(
-      135deg,
+      90deg,
       #F97B16 0%,
-      #FFB347 15%,
-      #FFC857 25%,
-      #FFFFFF 40%,
+      #FFB347 8%,
+      #FFC857 12%,
+      #FFFFFF 35%,
       #FFFFFF 50%,
-      #FFFFFF 60%,
-      #22C55E 75%,
-      #16A34A 90%,
-      #10591D 100%
+      #FFFFFF 65%,
+      #22C55E 88%,
+      #16A34A 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -505,26 +504,26 @@
     left: 16px;
     right: 16px;
     z-index: 40;
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid var(--border);
+    background: transparent;
+    border: none;
     border-radius: 72px;
     padding: 16px 40px;
     height: 72px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
     transition: all 300ms ease-out;
   }
 
   .floating-header:has(+ * :focus-visible) {
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.06);
-    border-color: rgba(249, 123, 22, 0.08);
+    box-shadow: none;
+    border-color: transparent;
   }
 
   /* Header on Scroll */
   .floating-header.scrolled {
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.06);
-    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    border-color: transparent;
   }
 
   /* Logo Container */

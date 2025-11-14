@@ -3,12 +3,13 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import { X, Menu } from "lucide-react"
+import Image from "next/image"
 
 export default function Header() {
   const [showPolicy, setShowPolicy] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const whatsappNumber = "919876543210"
+  const whatsappNumber = "918807332295"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
   useEffect(() => {
@@ -31,9 +32,14 @@ export default function Header() {
       <header className={`floating-header ${isScrolled ? "scrolled" : ""} flex items-center justify-between`}>
         {/* Logo */}
         <div className="flex items-center gap-2 sm:gap-3">
-          <div className="logo-container">
-            SmartIndia.Ai
-          </div>
+          <Image
+            src="/smartindia-logo.svg"
+            alt="SmartIndia.Ai Logo"
+            width={140}
+            height={40}
+            priority
+            className="h-8 sm:h-10 w-auto"
+          />
         </div>
 
         <nav className="hidden sm:flex items-center gap-8">

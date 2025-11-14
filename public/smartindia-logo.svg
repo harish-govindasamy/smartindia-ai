@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <!-- Background - optional, can be removed -->
+  <!-- Orange 'smartindia' text -->
+  <text x="10" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#F97B16">
+    smartindia
+  </text>
+  <!-- Green '.ai' text -->
+  <text x="130" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#22C55E">
+    .ai
+  </text>
+  <!-- Decorative dot above 'i' in smartindia -->
+  <circle cx="145" cy="15" r="4" fill="#F97B16"/>
+  <!-- Decorative dot above 'a' in .ai -->
+  <circle cx="150" cy="15" r="4" fill="#22C55E"/>
+</svg>
