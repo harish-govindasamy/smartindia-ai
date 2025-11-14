@@ -69,7 +69,7 @@ export default function Header() {
       </header>
 
       {showMobileMenu && (
-        <nav className="fixed top-20 left-4 right-4 sm:hidden bg-white border border-border rounded-xl px-6 py-4 flex flex-col gap-4 z-40 shadow-lg animate-fadeInUp">
+        <nav className="fixed top-20 left-4 right-4 sm:hidden bg-linear-to-br from-[#1a1a1a] to-[#252525] border border-border rounded-xl px-6 py-4 flex flex-col gap-4 z-40 shadow-lg animate-fadeInUp">
           <a
             href={whatsappUrl}
             target="_blank"
@@ -97,7 +97,7 @@ export default function Header() {
           onClick={handleBackdropClick}
         >
           <div className="policy-modal max-w-2xl max-h-[80vh] overflow-y-auto w-full hide-scrollbar">
-            <div className="sticky top-0 bg-white border-b border-border px-6 py-4 flex items-center justify-between">
+            <div className="sticky top-0 bg-gradient-to-r from-[#1a1a1a] to-[#252525] border-b border-border px-6 py-4 flex items-center justify-between">
               <h2 className="text-2xl text-premium-heading text-primary">Privacy Policy</h2>
               <button
                 onClick={() => setShowPolicy(false)}

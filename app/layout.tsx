@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${ibmPlexMono.variable} ${allura.variable} ${greatVibes.variable}`}>
+    <html lang="en" className={`dark ${playfairDisplay.variable} ${ibmPlexMono.variable} ${allura.variable} ${greatVibes.variable}`}>
       <body className={`font-body antialiased`}>
         {children}
         <Analytics />

@@ -76,7 +76,7 @@ export default function SearchSection() {
             </svg>
 
             {/* Title */}
-            <h1 className="hero-title mb-4 sm:mb-6 relative z-10">SmartIndia.Ai</h1>
+            <h1 className="hero-title mb-4 sm:mb-6 relative z-10">smartindia.ai</h1>
           </div>
           <p className="hero-tagline mx-auto">
             Brings AI and People together — Explore the world with AI
