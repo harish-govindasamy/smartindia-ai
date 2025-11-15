@@ -4,23 +4,23 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Luxury Premium Color Palette */
-  --background: #fafbfc;
-  --background-alt: #f0f4f8;
-  --foreground: #3a3a3a;
-  --card: #ffffff;
-  --card-foreground: #3a3a3a;
+  /* Dark Luxury Premium Color Palette */
+  --background: #0f0f0f;
+  --background-alt: #1a1a1a;
+  --foreground: #e8e8e8;
+  --card: #1a1a1a;
+  --card-foreground: #e8e8e8;
   --primary: #F97B16;
-  --primary-foreground: #ffffff;
+  --primary-foreground: #0f0f0f;
   --secondary: #16A34A;
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: #0f0f0f;
   --accent: #16A34A;
-  --accent-foreground: #ffffff;
-  --muted: #a8a8a8;
-  --muted-foreground: #6b6b6b;
-  --dark-text: #4a4a4a;
-  --border: rgba(0, 0, 0, 0.06);
-  --input: #fafbfc;
+  --accent-foreground: #0f0f0f;
+  --muted: #666666;
+  --muted-foreground: #a8a8a8;
+  --dark-text: #e8e8e8;
+  --border: rgba(249, 123, 22, 0.15);
+  --input: #1a1a1a;
   --ring: rgba(249, 123, 22, 0.5);
   --radius: 0.625rem;
   --chart-1: oklch(0.646 0.222 41.116);
@@ -28,18 +28,18 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar: oklch(0.145 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover: #1a1a1a;
+  --popover-foreground: #e8e8e8;
 }
 
 .dark {
@@ -201,7 +201,7 @@
   }
   
   body {
-    background: linear-gradient(135deg, #fafbfc 0%, #f0f4f8 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
     background-attachment: fixed;
     color: var(--foreground);
     font-family: "Sora", "Inter", system-ui, -apple-system, sans-serif;
@@ -220,6 +220,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: 0.5px;
+    color: #e8e8e8;
   }
 
   h1 {
@@ -237,7 +238,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(30, 30, 30, 0.8);
     border-radius: 10px;
   }
 
@@ -277,19 +278,19 @@
 
   /* Luxury Card Styling */
   .luxury-card {
-    background: #ffffff;
-    border: 1px solid var(--border);
+    background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    border: 1px solid rgba(249, 123, 22, 0.2);
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
     transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     font-family: "IBM Plex Mono", monospace;
   }
 
   .luxury-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.1);
-    border-color: rgba(249, 123, 22, 0.1);
+    box-shadow: 0 20px 56px rgba(249, 123, 22, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    border-color: rgba(249, 123, 22, 0.4);
   }
 
   /* Premium Button Styling */
@@ -330,9 +331,9 @@
   .luxury-input {
     padding: 12px 16px;
     border-radius: 8px;
-    background: #ffffff;
-    border: 1px solid rgba(249, 123, 22, 0.15);
-    color: var(--dark-text);
+    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
+    border: 1px solid rgba(249, 123, 22, 0.25);
+    color: #e8e8e8;
     font-size: 16px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
@@ -342,27 +343,28 @@
   }
 
   .luxury-input::placeholder {
-    color: #a8a8a8;
+    color: #666666;
   }
 
   .luxury-input:focus {
     outline: none;
-    border-color: rgba(249, 123, 22, 0.3);
-    box-shadow: 0 0 0 3px rgba(249, 123, 22, 0.1), 0 4px 12px rgba(249, 123, 22, 0.15);
+    border-color: rgba(249, 123, 22, 0.5);
+    box-shadow: 0 0 0 3px rgba(249, 123, 22, 0.1), 0 4px 12px rgba(249, 123, 22, 0.2);
+    background: linear-gradient(135deg, #2a2a2a 0%, #252525 100%);
   }
 
   .luxury-input:hover {
-    border-color: rgba(249, 123, 22, 0.2);
-    background: rgba(249, 123, 22, 0.02);
+    border-color: rgba(249, 123, 22, 0.35);
+    background: linear-gradient(135deg, #2a2a2a 0%, #252525 100%);
   }
 
   /* Premium Search Container */
   .luxury-search-container {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(249, 123, 22, 0.15);
+    background: rgba(26, 26, 26, 0.7);
+    border: 1px solid rgba(249, 123, 22, 0.2);
     border-radius: 16px;
     padding: 20px 28px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -370,16 +372,16 @@
   }
 
   .luxury-search-container:focus-within {
-    box-shadow: 0 16px 56px rgba(249, 123, 22, 0.12);
-    border-color: rgba(249, 123, 22, 0.25);
+    box-shadow: 0 16px 56px rgba(249, 123, 22, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    border-color: rgba(249, 123, 22, 0.4);
   }
 
   /* Hero Title with Indian Flag Colors - Clean & Crisp */
   .hero-title {
-    font-family: "Great Vibes", cursive;
+    font-family: "Playfair Display", "Merriweather", serif;
     font-size: clamp(2.5rem, 12vw, 6rem);
-    font-weight: 400;
-    letter-spacing: 0.05em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     line-height: 1.2;
     
     /* Vibrant Indian Flag Gradient - Orange, White, Green */
@@ -420,7 +422,7 @@
     font-family: "Sora", "Inter", system-ui, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #6b6b6b;
+    color: #a8a8a8;
     letter-spacing: 0.8px;
     line-height: 1.6;
     max-width: 600px;
@@ -432,7 +434,7 @@
   .tip-text {
     font-family: "JetBrains Mono", "IBM Plex Mono", monospace;
     font-size: 13px;
-    color: #7a7a7a;
+    color: #888888;
     font-weight: 400;
     letter-spacing: 0.3px;
     margin-top: 20px;
@@ -465,7 +467,7 @@
     font-family: "Sora", "Inter", system-ui, sans-serif;
     font-weight: 500;
     letter-spacing: 0.5px;
-    color: #3a3a3a;
+    color: #c0c0c0;
     opacity: 0.7;
     position: relative;
     text-decoration: none;
@@ -486,7 +488,7 @@
   .nav-link:hover {
     opacity: 1;
     color: #F97B16;
-    text-shadow: 0 2px 8px rgba(249, 123, 22, 0.15);
+    text-shadow: 0 2px 8px rgba(249, 123, 22, 0.3);
   }
 
   .nav-link:hover::after {
@@ -536,15 +538,15 @@
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 14px;
-    color: white;
+    color: #0f0f0f;
     letter-spacing: 1px;
-    box-shadow: 0 4px 12px rgba(249, 123, 22, 0.3);
+    box-shadow: 0 4px 12px rgba(249, 123, 22, 0.4);
     animation: glowFadeIn 800ms ease-in-out;
   }
 
   .logo-container:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(249, 123, 22, 0.4);
+    box-shadow: 0 8px 24px rgba(249, 123, 22, 0.5);
   }
 
   /* Footer Styling */
@@ -561,9 +563,9 @@
     background: linear-gradient(90deg,
       #F97B16 0%,
       #F97B16 15%,
-      #002395 30%,
-      #002395 50%,
-      #002395 70%,
+      #FFFFFF 30%,
+      #FFFFFF 50%,
+      #FFFFFF 70%,
       #22C55E 85%,
       #16A34A 100%);
     -webkit-background-clip: text;
@@ -585,23 +587,24 @@
 
   /* Policy Backdrop */
   .policy-backdrop {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
 
   .policy-modal {
-    background: white;
-    border: 1px solid var(--border);
+    background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    border: 1px solid rgba(249, 123, 22, 0.2);
     border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     animation: fadeInScale 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     font-family: "IBM Plex Mono", monospace;
+    color: #e8e8e8;
   }
 
   /* Search Results Modal */
   .search-results-backdrop {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     animation: fadeInScale 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -609,7 +612,9 @@
 
   .search-results-modal {
     animation: fadeInScale 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
-    box-shadow: 0 20px 80px rgba(249, 123, 22, 0.15);
+    box-shadow: 0 20px 80px rgba(249, 123, 22, 0.2);
+    background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    border: 1px solid rgba(249, 123, 22, 0.2);
   }
 
   .search-results-modal::-webkit-scrollbar {
@@ -617,7 +622,7 @@
   }
 
   .search-results-modal::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(30, 30, 30, 0.8);
     border-radius: 10px;
   }
 
@@ -695,10 +700,10 @@
 
   /* Glass Morphism Effect */
   .glassmorphism {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(26, 26, 26, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(249, 123, 22, 0.2);
   }
 
   /* Focus Visible for All Interactive Elements */

@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <footer className="luxury-footer">
-      <p className="footer-copyright">© {currentYear} SmartIndia.Ai</p>
+      <p className="footer-copyright">© {currentYear} smartindia.ai</p>
     </footer>
   )
 }

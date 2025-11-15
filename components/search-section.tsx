@@ -38,22 +38,22 @@ export default function SearchSection() {
       {/* Hero Section */}
       <div className="text-center mb-4 sm:mb-6 md:mb-8 mt-4 sm:mt-6">
         <div className="relative flex justify-center">
-            {/* Ashoka Chakra Background - Thick Blue with Rotation */}
+            {/* Ashoka Chakra Background - Enhanced Visibility */}
             <svg
-              className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 opacity-30 pointer-events-none -z-10 animate-spin"
-              style={{ animationDuration: '20s', animationDirection: 'normal' }}
+              className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 opacity-60 pointer-events-none -z-10 animate-spin"
+              style={{ animationDuration: '20s', animationDirection: 'normal', filter: 'drop-shadow(0 0 20px rgba(0, 85, 255, 0.6))' }}
               viewBox="0 0 200 200"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
             >
-              {/* Outer Circle - Thick Blue */}
-              <circle cx="100" cy="100" r="95" stroke="#002395" strokeWidth="3.5" />
+              {/* Outer Circle - Bright Blue */}
+              <circle cx="100" cy="100" r="95" stroke="#0055ff" strokeWidth="4" />
               
-              {/* Inner Circle Center - Blue */}
-              <circle cx="100" cy="100" r="10" fill="#002395" />
+              {/* Inner Circle Center - Bright Blue */}
+              <circle cx="100" cy="100" r="10" fill="#0055ff" />
               
-              {/* 24 Spokes - Thick Blue */}
+              {/* 24 Spokes - Bright Blue */}
               {[...Array(24)].map((_, i) => {
                 const angle = (i * 360) / 24;
                 const rad = (angle * Math.PI) / 180;
@@ -68,15 +68,15 @@ export default function SearchSection() {
                     y1={y1}
                     x2={x2}
                     y2={y2}
-                    stroke="#002395"
-                    strokeWidth="2.5"
+                    stroke="#0055ff"
+                    strokeWidth="3"
                   />
                 );
               })}
             </svg>
 
             {/* Title */}
-            <h1 className="hero-title mb-4 sm:mb-6 relative z-10">SmartIndia.Ai</h1>
+            <h1 className="hero-title mb-4 sm:mb-6 relative z-10">smartindia.ai</h1>
           </div>
           <p className="hero-tagline mx-auto">
             Brings AI and People together — Explore the world with AI
