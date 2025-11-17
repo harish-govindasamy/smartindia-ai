@@ -1,11 +1,33 @@
-import Header from "@/components/header"
-import SearchSection from "@/components/search-section"
-import Footer from "@/components/footer"
+import Header from "@/components/header";
+import SearchSection from "@/components/search-section";
+import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "SmartIndia.Ai - Brings AI and People together",
-  description: "Search engine tag - Explore the world with AI",
-}
+  title:
+    "Smart India AI - India's Premier AI-Powered Search Engine | smartindia.ai",
+  description:
+    "Smart India AI brings artificial intelligence and people together. Search the web with AI-powered tools across Google, Bing, DuckDuckGo, Brave, Yandex, and Ecosia. Experience intelligent search for India.",
+  keywords:
+    "Smart India AI, AI search engine India, artificial intelligence search, smartindia.ai, multi-engine search, intelligent web search India",
+  alternates: {
+    canonical: "https://smartindia.ai",
+  },
+  openGraph: {
+    title: "Smart India AI - India's Premier AI-Powered Search Engine",
+    description:
+      "Experience the future of search with Smart India AI. Advanced AI-powered search across multiple engines.",
+    url: "https://smartindia.ai",
+    type: "website",
+    images: [
+      {
+        url: "https://smartindia.ai/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Smart India AI Homepage",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
@@ -16,5 +38,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

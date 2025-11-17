@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy:hostinger": "next build && echo 'Build complete! Upload the dist folder contents to Hostinger public_html'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
