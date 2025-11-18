@@ -1,0 +1,21 @@
+# robots.txt for smartindia.ai
+
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Allow: /search-results
+Allow: /policy
+
+# Sitemap location
+Sitemap: https://smartindia.ai/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block unnecessary paths (if any in future)
+# Disallow: /admin
+# Disallow: /api/internal
+
+# Allow search engines to index all content
+# This helps with SEO ranking for smartindia.ai

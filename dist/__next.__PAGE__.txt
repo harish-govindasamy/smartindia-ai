@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[13293,["/_next/static/chunks/0c6932420e96e619.js","/_next/static/chunks/bb94cb96c893b72c.js"],"default"]
+3:I[36989,["/_next/static/chunks/0c6932420e96e619.js","/_next/static/chunks/bb94cb96c893b72c.js"],"default"]
+4:I[97367,["/_next/static/chunks/42879de7b8087bc9.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"kAYCgubaRi2x-uI7t7OEv","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex flex-col bg-linear-to-b from-transparent via-transparent to-background","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1 flex flex-col items-center justify-start px-2 sm:px-3 md:px-4 py-4 sm:py-6 pt-24 sm:pt-28 md:pt-32","children":["$","$L3",null,{}]}],["$","footer",null,{"className":"luxury-footer","children":["$","p",null,{"className":"footer-copyright","children":["© ",2025," smartindia.ai"]}]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/bb94cb96c893b72c.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null
