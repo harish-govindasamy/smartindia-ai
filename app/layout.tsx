@@ -165,9 +165,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`font-body antialiased mobile-full-height prevent-overscroll`}
-      >
+      <body className={`font-body antialiased`}>
         {children}
         <Analytics />
       </body>
