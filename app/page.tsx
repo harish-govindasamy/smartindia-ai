@@ -31,7 +31,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-linear-to-b from-transparent via-transparent to-background">
+    <div className="mobile-full-height prevent-overscroll flex flex-col bg-linear-to-b from-transparent via-transparent to-background">
       <Header />
       <main className="flex-1 flex flex-col items-center justify-start px-2 sm:px-3 md:px-4 py-4 sm:py-6 pt-24 sm:pt-28 md:pt-32">
         <SearchSection />

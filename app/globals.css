@@ -201,7 +201,16 @@
     outline-color: var(--ring);
   }
 
+  html {
+    height: 100%;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+  }
+
   body {
+    min-height: 100vh;
+    /* Use min-height instead of height for better mobile compatibility */
+    min-height: 100svh; /* Use small viewport height for better mobile support */
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
     background-attachment: fixed;
     color: var(--foreground);
@@ -210,6 +219,18 @@
     letter-spacing: 0.3px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Ensure consistent background */
+    position: relative;
+  }
+
+  /* Fix for mobile browsers address bar issue */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      /* iOS Safari specific fix */
+      min-height: -webkit-fill-available;
+    }
   }
 
   h1,
@@ -699,6 +720,30 @@
       font-size: 12px;
       padding: 6px 16px;
     }
+
+    /* Mobile-specific height fix */
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: -webkit-fill-available;
+    }
+
+    /* Ensure full coverage on mobile */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        135deg,
+        #0a0a0a 0%,
+        #1a1a1a 50%,
+        #0f0f0f 100%
+      );
+      z-index: -1;
+    }
   }
 
   /* Staggered Animation for Cards */
@@ -742,5 +787,25 @@
   select:focus-visible {
     outline: 2px solid rgba(249, 123, 22, 0.5);
     outline-offset: 4px;
+  }
+
+  /* Mobile viewport fix utilities */
+  .mobile-full-height {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: -webkit-fill-available;
+  }
+
+  /* Prevent overscroll bounce on iOS */
+  .prevent-overscroll {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix for mobile background attachment */
+  @media (max-width: 768px) {
+    body {
+      background-attachment: scroll;
+    }
   }
 }
